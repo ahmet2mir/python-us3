@@ -21,12 +21,13 @@ __author__ = "Ahmet Demir <me@ahmet2mir.eu>"
 
 from setuptools import setup, find_packages
 
-version = '0.0.1'
+version = '0.0.2'
 
 setup(
     name='us3',
     version=version,
     long_description=open('README.md').read(),
+    url='https://github.com/ahmet2mir/python-usr3.git',
     author='Ahmet Demir',
     author_email='me@ahmet2mir.eu',
     description='Upload to S3',
