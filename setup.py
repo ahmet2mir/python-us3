@@ -21,7 +21,7 @@ __author__ = "Ahmet Demir <me@ahmet2mir.eu>"
 
 from setuptools import setup, find_packages
 
-version = '0.0.4'
+version = '0.0.5'
 
 setup(
     name='us3',
