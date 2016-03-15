@@ -88,7 +88,7 @@ And use environment variables. By default, files are stored in /data
 
 ## Licence
 
-Copyright 2016 - Ahmet Demir
+Copyright 2016 - [Ahmet Demir](http://ahmet2mir.eu)
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
