@@ -21,12 +21,12 @@ __author__ = "Ahmet Demir <me@ahmet2mir.eu>"
 
 from setuptools import setup, find_packages
 
-version = '0.0.5'
+version = '0.0.6'
 
 setup(
     name='us3',
     version=version,
-    long_description=open('README.md').read(),
+    long_description=open('README.rst').read(),
     url='https://github.com/ahmet2mir/python-us3.git',
     author='Ahmet Demir',
     author_email='me@ahmet2mir.eu',
@@ -34,7 +34,7 @@ setup(
     license='License :: OSI Approved :: Apache Software License',
     keywords=['s3', 'command line', 'cli'],
     packages=find_packages(),
-    package_data = {'': ['README.md']},
+    package_data = {'': ['README.rst']},
     install_requires=open('requirements.txt').read().splitlines(),
     entry_points={
         'console_scripts': [
