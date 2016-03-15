@@ -72,6 +72,8 @@ Example:
 
 ## Docker
 
+Image size ~70MB
+
     docker pull ahmet2mir/us3
 
 And use environment variables. By default, files are stored in /data
