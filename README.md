@@ -74,7 +74,7 @@ Example:
 
     docker pull ahmet2mir/us3
 
-And use environent variables. By default, file are stored in /data
+And use environment variables. By default, files are stored in /data
 
     docker run --rm \
         -e "US3_ENDPOINT=s3-eu-west-1.amazonaws.com" \
