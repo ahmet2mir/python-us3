@@ -36,7 +36,8 @@ Options
     -a <access> --access=<access>               Access key.
     -x <secret> --secret=<secret>               Secret key.
     -e <endpoint> --endpoint=<endpoint>         Host to connect to. Default 
-                                                is s3.amazonaws.com. You can [check all AWS host/region](http://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region)
+                                                is s3.amazonaws.com. You can check all AWS host/region on 
+                                                http://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region
     -i <is_secure> --is_secure=<is_secure>      Use secure connection (https) 
                                                 or not (http). Default is True.
     -k <clg> --calling_format=<clg>             Choose how to call the S3 API. 
