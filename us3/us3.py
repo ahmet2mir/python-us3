@@ -15,8 +15,8 @@ Author: Ahmet Demir <me@ahmet2mir.eu>
 Sources: https://github.com/ahmet2mir/us3.git
 
 Usage:
-    us3 (upload|download) [options] -b <bucket> -s <src>
-    us3 delete [options] -b <bucket> -s <src>
+    us3 (upload|download) [options] -s <src>
+    us3 delete [options] -s <src>
 
 Options:
     -h --help                                   Show this screen.
@@ -141,8 +141,11 @@ def config(arguments):
     if "--config" in arguments and arguments["--config"]:
         with open(arguments["--config"], 'r') as fb:
             data = yaml.safe_load(fb)
+    elif os.environ.get("US3_CONFIG", None):
+        with open(os.environ["US3_CONFIG"], 'r') as fb:
+            data = yaml.safe_load(fb)
     elif os.path.isfile("/etc/default/us3.yaml"):
-        with open(arguments["--config"], 'r') as fb:
+        with open("/etc/default/us3.yaml", 'r') as fb:
             data = yaml.safe_load(fb)
 
     # erase

@@ -11,10 +11,12 @@ us3 helps you to manage files on AWS S3 or S3 compatible API like Ceph or Clever
 
     pip install us3
 
+For Docker check bottom
+
 ## Usage
 
-    us3 (upload|download) [options] -b <bucket> -s <src>
-    us3 delete [options] -b <bucket> -s <src>
+    us3 (upload|download) [options] -s <src>
+    us3 delete [options] -s <src>
 
 ## Options
 
@@ -23,7 +25,7 @@ us3 helps you to manage files on AWS S3 or S3 compatible API like Ceph or Clever
     -a <access> --access=<access>               Access key.
     -x <secret> --secret=<secret>               Secret key.
     -e <endpoint> --endpoint=<endpoint>         Host to connect to. Default 
-                                                is s3.amazonaws.com.
+                                                is s3.amazonaws.com. You can [check all AWS host/region](http://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region)
     -i <is_secure> --is_secure=<is_secure>      Use secure connection (https) 
                                                 or not (http). Default is True.
     -k <clg> --calling_format=<clg>             Choose how to call the S3 API. 
@@ -67,6 +69,20 @@ Example:
     export US3_HOST= myexporthost
     export US3_ACCESS=myaccesskey
     export US3_SECRET=mysecurekey
+
+## Docker
+
+    docker pull ahmet2mir/us3
+
+And use environent variables. By default, file are stored in /data
+
+    docker run --rm \
+        -e "US3_ENDPOINT=s3-eu-west-1.amazonaws.com" \
+        -e 'US3_BUCKET=xxxx' \
+        -e 'US3_ACCESS=yyyy' \
+        -e 'US3_SECRET=zzzz+' \
+        -v /tmp/docker:/data \
+        ahmet2mir/us3 download -s myfile
 
 ## Licence
 
