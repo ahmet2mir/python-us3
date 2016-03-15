@@ -21,7 +21,7 @@ __author__ = "Ahmet Demir <me@ahmet2mir.eu>"
 
 from setuptools import setup, find_packages
 
-version = '0.0.6'
+version = '0.0.7'
 
 setup(
     name='us3',
@@ -30,7 +30,7 @@ setup(
     url='https://github.com/ahmet2mir/python-us3.git',
     author='Ahmet Demir',
     author_email='me@ahmet2mir.eu',
-    description='Upload to S3',
+    description='US3 helps you to manage files on AWS S3 or S3 compatible API like Ceph or Cleversafe',
     license='License :: OSI Approved :: Apache Software License',
     keywords=['s3', 'command line', 'cli'],
     packages=find_packages(),
