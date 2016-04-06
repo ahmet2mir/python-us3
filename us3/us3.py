@@ -9,7 +9,7 @@ r"""
  \__,_|___/____/ 
 
 us3 helps you to manage files on AWS S3 or S3 compatible API.
-Usefull with Continuous Integreation pipelines :)
+Useful with Continuous Integration pipelines :)
 
 Author: Ahmet Demir <me@ahmet2mir.eu>
 Sources: https://github.com/ahmet2mir/us3.git
