@@ -7,7 +7,7 @@
      \__,_|___/____/ 
 
 us3 helps you to manage files on AWS S3 or S3 compatible API like Ceph
-or Cleversafe. Usefull with Continuous Integreation pipelines :)
+or Cleversafe. Useful with Continuous Integration pipelines :)
 
 Installation
 ------------
